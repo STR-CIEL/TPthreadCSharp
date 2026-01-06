@@ -19,15 +19,13 @@ namespace TPthreadCSharp
             }
         public void afficheC()
         {
-            while (true)
-            {
-                Thread thread = Thread.CurrentThread;
-                for (int i = 0; i < 101; i++)
-                {
-                    Console.WriteLine($"Thread name: {Thread.CurrentThread.Name}");
-                    Thread.Sleep(1000);
-                }
+          
+            Thread thread = Thread.CurrentThread;
+            for (int i = 0; i < 101; i++)
+            {               
+                Console.WriteLine($"Thread name: {Thread.CurrentThread.Name}");
             }
+            
         }
     }
 }
