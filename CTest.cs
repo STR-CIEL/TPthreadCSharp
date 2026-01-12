@@ -23,9 +23,17 @@ namespace TPthreadCSharp
             Thread thread = Thread.CurrentThread;
             for (int i = 0; i < 101; i++)
             {               
-                Console.WriteLine($"Thread name: {Thread.CurrentThread.Name}");
+                Console.WriteLine($"Thread name: {Thread.CurrentThread.Name}| {Thread.CurrentThread.ManagedThreadId}");
             }
             
         }
+        public void affiched(object id)
+        {
+            Console.WriteLine("Debut");
+            Thread.Sleep(1000);
+            Console.WriteLine("Fin du programme");
+
+        }
+       
     }
 }
